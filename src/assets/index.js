@@ -1,4 +1,4 @@
-import logo from './Ecelllogo.png';
+import logo from './About/EcellLogo.png';
 import businessModel from './Events/business-model.png';
 import eSummit from './Events/essumit.png';
 import innobuzz from './Events/innobuzz.png';

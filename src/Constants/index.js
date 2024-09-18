@@ -24,26 +24,28 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "vision",
-    title: "Vision",
-  },
-  {
     id: "mission",
     title: "Mission",
   },
   {
+    id: "vision",
+    title: "Vision",
+  },
+  
+  {
     id: "event",
     title: "Events",
   },
-  // {
-  //   id: "gallery",
-  //   title: "Gallery",
-  // },
+
+  {
+    id: "gallery",
+    title: "Gallery",
+  },
   {
     id: "contact",
     title: "Contact",
   },
-  
+
   // {
   //   id: "/team",
   //   title: "Team",
@@ -59,9 +61,7 @@ const events = [
     icon: eSummit,
     iconBg: "#383E56",
     date: "19 August 2024",
-    points: [
-      "For First Year Student Awareness For The Enterpreneurship",
-    ],
+    points: ["For First Year Student Awareness For The Enterpreneurship"],
     site: "https://www.google.com/",
   },
   {
@@ -69,12 +69,9 @@ const events = [
     // company_name: "Tesla",
     icon: eSummit,
     iconBg: "#383E56",
-    points: [
-      "Coming Soon..."
-    ],
+    points: ["Coming Soon..."],
     site: "https://www.google.com/",
   },
- 
 ];
 
 // const startups = [
@@ -596,4 +593,4 @@ const GalleryData = [
 //   },
 // ];
 
-export {events, GalleryData };
+export { events, GalleryData };

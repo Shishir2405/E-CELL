@@ -44,7 +44,7 @@ function About() {
             className="flex flex-wrap lg:w-1/2 justify-center items-center"
           >
             <p
-              className={`${styles.sectionSubText} indent-4 tracking-widest leading-9`}
+              className={`${styles.sectionSubText} indent-4 tracking-widest leading-7 lg:leading-9 text-sm md:text-base mb-6 lg:text-lg`}
             >
               Entrepreneurship Cell(E-Cell) is a non-profit organisation run by
               students of IPS Academy, Indore. We create awareness among the

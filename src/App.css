@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 /* * {
     margin: 0;
     padding: 0;
@@ -12,6 +13,7 @@
 } */
 html {
   overflow-x: hidden !important;
+  font-family: "Nunito", sans-serif;
 }
 
 body {
@@ -39,11 +41,24 @@ body::-webkit-scrollbar-thumb {
     scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
   }
 }
+#main-heading {
+  font-family: "ui-sans-serif", sans-serif;
+}
 
 .making {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+::selection {
+  background-color: #e9e9e922;
+  color: #a2f6e2;
+}
+
+::-moz-selection {
+  background-color: #e9e9e922;
+  color: #a2f6e2;
 }
 
 .st {
@@ -449,7 +464,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   padding: 40px 100px;
 }
-.contactUS .title h2 { 
+.contactUS .title h2 {
   font-weight: 500;
 }
 .form {

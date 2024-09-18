@@ -21,11 +21,11 @@ function Home() {
           whileInView="show"
           viewport={{ once: true }}
         >
-          <img className="h-28" src={logo} alt="" />
-          <motion.h1 className={`${styles.heroHeadText}text-white-100 my-4`}>
+          <img className="h-28 mb-6 md:mb-0" src={logo} alt="" />
+          <motion.h1 className={`${styles.heroHeadText}text-white-100 my-4 mb-6 md:mb-0`} id="main-heading">
             E-CELL | IPS ACADEMY
           </motion.h1>
-          <h2 className={`${styles.heroSubText} mt-2  text-white-100`}>
+          <h2 className={`${styles.heroSubText} mt-2  text-white-100 mb-6 md:mb-0`}>
             <i> E-cell x IIT Bombay </i>
           </h2>
           <h6 className={` ${styles.heroSubText} mt-2  text-white-100 `}>
@@ -46,7 +46,7 @@ function Home() {
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSckw7XDF13EV4DMprYjhzg9AgT4ICu6AWbHlztlOgG-LKgZEg/viewform?vc=0&c=0&w=1&flr=0">
             {" "}
             <button className="border-2 px-6 py-2 text-base text-white rounded-lg font-medium hover:bg-white/10">
-              Register
+              Feedback
             </button>
           </a>
         </motion.div>

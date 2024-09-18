@@ -30,27 +30,35 @@ function Contact() {
   };
 
   return (
-    <div id="contact" className="body w-screen h-full mx-auto">
+    <div id="contact" className="body w-screen h-full mx-auto flex justify-center">
       <div className="contactUs p-10">
         <div
           className={`mt-0 ${styles.heroHeadText} flex justify-center items-center`}
         >
-          <motion.h2
-            variants={textVariant()}
-            viewport={{ once: true }}
-            initial="hidden"
-            whileInView="show"
-          >
-            Get in Touch
-          </motion.h2>
+          <div className="relative w-fit mx-auto">
+            <span className="h-[1px] w-36 bg-white absolute -bottom-2 -right-9" />
+            <span className="h-[1px] w-36 bg-white absolute -top-2 -left-9" />
+            <motion.h2
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              variants={textVariant()}
+              className={`${styles.heroHeadText} flex justify-center`}
+            >
+              Get In{" "}
+              <span className="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent ml-2">
+                Touch
+              </span>
+            </motion.h2>
+          </div>
         </div>
-        <div className="box w-screen">
+        <div className="w-screen ">
           <motion.div
             variants={slideIn("left", "tween", 0.5, 1)}
             initial="hidden"
             animate="show"
             viewport={{ once: true }}
-            className="contact form bg-primary"
+            className="contact form"
           >
             <h3 className={styles.sectionHeadText}>Send a Message</h3>
             <form ref={form} onSubmit={sendEmail}>
@@ -113,9 +121,9 @@ function Contact() {
                   </div>
                 </div>
 
-                <div className="row100">
-                  <div className="inputBox cursor-pointer">
-                    <button class="cursor-pointer text-white font-bold relative text-base w-24 h-10 text-center bg-gradient-to-r from-violet-500 from-10% via-sky-500 via-30% to-pink-500 to-90% bg-[length:400%] rounded-[30px] z-10 hover:animate-gradient-xy hover:bg-[length:100%] before:content-[''] before:absolute before:-top-[5px] before:-bottom-[5px] before:-left-[5px] before:-right-[5px] before:bg-gradient-to-r before:from-violet-500 before:from-10% before:via-sky-500 before:via-30% before:to-pink-500 before:bg-[length:400%] before:-z-10 before:rounded-[35px] before:hover:blur-xl before:transition-all before:ease-in-out before:duration-[1s] before:hover:bg-[length:10%] active:bg-violet-700 focus:ring-violet-700">
+                <div>
+                  <div className="cursor-pointer">
+                    <button className="border-2 px-6 py-2 text-base text-white rounded-lg font-medium hover:bg-white/10">
                       Submit
                     </button>
                   </div>
@@ -123,24 +131,17 @@ function Contact() {
               </div>
             </form>
           </motion.div>
-
-          <motion.div
-            variants={slideIn("right", "tween", 0.5, 1)}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-            className="contact map"
-          >
-            <iframe
-              title="google"
-              src="https://www.google.com/maps/embed/v1/place?q=ips+academy,+institute+of+engineering&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </motion.div>
+         
         </div>
+        {/* <iframe
+          title="google"
+          src="https://www.google.com/maps/embed/v1/place?q=ips+academy,+institute+of+engineering&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          className="w-full h-1/4"
+        ></iframe> */}
       </div>
+      
     </div>
   );
 }

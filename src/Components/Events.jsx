@@ -48,15 +48,19 @@ const Event = () => {
   return (
     <>
       <div id="event" className={`${styles.paddingX}`}>
-        <motion.h1
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          variants={textVariant()}
-          className={`${styles.heroHeadText} flex justify-center`}
-        >
-          Events
-        </motion.h1>
+      <div className="relative w-fit mx-auto">
+          <span className="h-[1px] w-36 bg-white absolute -bottom-2 -right-9" />
+          <span className="h-[1px] w-36 bg-white absolute -top-2 -left-9" />
+          <motion.h1
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            variants={textVariant()}
+            className={`${styles.heroHeadText} flex justify-center m-16`}
+          >
+             <span className="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">Events</span>{" "}{" "}
+          </motion.h1>
+        </div>
         <motion.h5
           initial="hidden"
           whileInView="show"

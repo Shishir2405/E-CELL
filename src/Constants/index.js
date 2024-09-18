@@ -24,25 +24,34 @@ export const navLinks = [
     title: "About",
   },
   {
+    id: "vision",
+    title: "Vision",
+  },
+  {
+    id: "mission",
+    title: "Mission",
+  },
+  {
     id: "event",
     title: "Events",
   },
-  {
-    id: "gallery",
-    title: "Gallery",
-  },
+  // {
+  //   id: "gallery",
+  //   title: "Gallery",
+  // },
   {
     id: "contact",
     title: "Contact",
   },
-  {
-    id: "/team",
-    title: "Team",
-  },
-  {
-    id: "/register",
-    title: "Register",
-  },
+  
+  // {
+  //   id: "/team",
+  //   title: "Team",
+  // },
+  // {
+  //   id: "https://docs.google.com/forms/d/e/1FAIpQLSckw7XDF13EV4DMprYjhzg9AgT4ICu6AWbHlztlOgG-LKgZEg/viewform?vc=0&c=0&w=1&flr=0",
+  //   title: "Register",
+  // },
 ];
 const events = [
   {
@@ -51,7 +60,7 @@ const events = [
     iconBg: "#383E56",
     date: "19 August 2024",
     points: [
-      "For First Year Student Awarness For The Enterpreneurship",
+      "For First Year Student Awareness For The Enterpreneurship",
     ],
     site: "https://www.google.com/",
   },
@@ -61,7 +70,7 @@ const events = [
     icon: eSummit,
     iconBg: "#383E56",
     points: [
-      "Many More Will Be organized By us"
+      "Coming Soon..."
     ],
     site: "https://www.google.com/",
   },

@@ -8,60 +8,61 @@ import {
   Navbar,
   StarsCanvas,
   Team,
-  Footer
+  Footer,
+  Mission,
+  Vision,
 } from "./Components";
 
- import { useState, useEffect } from "react";
- import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
+import { useState, useEffect } from "react";
+import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 
 function App() {
+  const [loading, setLoading] = useState(false);
 
-  const [loading,setLoading]=useState(false);
-
-  useEffect(()=>{
+  useEffect(() => {
     setLoading(true);
-    setTimeout(()=>{
+    setTimeout(() => {
       setLoading(false);
-    },2000)
-  },[])
-
+    }, 2000);
+  }, []);
 
   return (
     <div className="App bg-primary">
-    {loading ? 
-    <div className="flex justify-center items-center text-center bg-primary w-full h-screen">
-         <ClimbingBoxLoader 
-         color="#ffffff"
-         size={20}
-         aria-label="Loading Spinner"
-         data-testid="loader"
-         /> 
-         </div>
-         : 
-         <BrowserRouter>
-         <Navbar />
-         <StarsCanvas />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <div className="relative z-0 bg-primary">
-                <Home />
-              <About />
-              <Events />
-              <Gallery />
-              {/* <Startups />
+      {loading ? (
+        <div className="flex justify-center items-center text-center bg-primary w-full h-screen">
+          <ClimbingBoxLoader
+            color="#ffffff"
+            size={20}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+        </div>
+      ) : (
+        <BrowserRouter>
+          <Navbar />
+          <StarsCanvas />
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <div className="relative z-0 bg-primary">
+                  <Home />
+                  <About />
+                  <Mission />
+                  <Vision />
+                  <Events />
+                  <Gallery />
+                  {/* <Startups />
               <Wings />
               <Terstimonials /> */}
-              <div className="relative z-0 bg-primary">
-                <StarsCanvas />
-                <Contact setLoading={setLoading} loading={loading} />
-                
-              </div>
-            </div>
-          }
-        />
-        {/* <Route
+                  <div className="relative z-0 bg-primary">
+                    <StarsCanvas />
+                    <Contact setLoading={setLoading} loading={loading} />
+                  </div>
+                </div>
+              }
+            />
+            {/* <Route
           path="/team"
           element={
             <div>
@@ -70,10 +71,10 @@ function App() {
             </div>
           }
         /> */}
-      </Routes>
-      <Footer />
-    </BrowserRouter>
-}
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      )}
     </div>
   );
 }

@@ -11,10 +11,10 @@ function Footer() {
           <ul className="text-lg flex items-center justify-center flex-col gap-7 md:flex-row md:gap-12 transition-all duration-500 py-10 mb-10 border-b border-gray-200">
             <li>
               <a
-                href="javascript:;"
+                href="#about"
                 className=" text-white/50 hover:text-white"
               >
-                Products
+                About
               </a>
             </li>
             <li>
@@ -22,7 +22,7 @@ function Footer() {
                 href="javascript:;"
                 className=" text-white/50 hover:text-white"
               >
-                Resources
+                Our Vision
               </a>
             </li>
             <li>
@@ -30,21 +30,21 @@ function Footer() {
                 href="javascript:;"
                 className=" text-white/50 hover:text-white"
               >
-                Blogs
+                Mission
               </a>
             </li>
             <li>
               <a
-                href="javascript:;"
+                href="#gallery"
                 className=" text-white/50 hover:text-white"
               >
-                Support
+                Gallery
               </a>
             </li>
           </ul>
           <div className="flex space-x-10 justify-center items-center mb-10">
             <a
-              href="javascript:;"
+              href="https://x.com/ecell_ipsa?t=lS_OGZqLmNg5tBbqMakEyg&s=09"
               className="block text-white/75 transition-all duration-500 hover:text-sky-400 "
             >
               <svg
@@ -62,7 +62,7 @@ function Footer() {
               </svg>
             </a>
             <a
-              href="javascript:;"
+              href="https://www.instagram.com/ecell.ipsa/profilecard/?igsh=MWV6MnEwY2k2a3ZzaQ%3D%3D"
               className="block text-white/75 transition-all duration-500 hover:text-sky-400 "
             >
               <svg
@@ -112,9 +112,6 @@ function Footer() {
               </svg>
             </a>
           </div>
-          <span className="text-lg text-gray-500 text-center block">
-            Made With love 💙
-          </span>
         </div>
       </div>
     </footer>

@@ -1,9 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "../App.css";
-import { BsLinkedin, BsInstagram, BsGithub, BsFacebook } from "react-icons/bs";
-import { ImLocation2, ImPhone } from "react-icons/im";
-import { MdEmail } from "react-icons/md";
 import { styles } from "../styles";
 import { motion } from "framer-motion";
 import { slideIn, textVariant } from "../utils/motion";
@@ -16,10 +13,10 @@ function Contact() {
 
     emailjs
       .sendForm(
-        "service_gp4dnzi",
-        "template_m0mvafi",
+        "service_8977bkf",
+        "template_0c916fa",
         form.current,
-        "iPijZYLeGH7kciMvU"
+        "bN_v5H49BQ1zL814W"
       )
       .then(
         (result) => {
@@ -33,10 +30,10 @@ function Contact() {
   };
 
   return (
-    <div id="contact" className="body w-full h-full mx-auto">
+    <div id="contact" className="body w-screen h-full mx-auto">
       <div className="contactUs p-10">
         <div
-          className={` mt-0 ${styles.heroHeadText} flex justify-center items-center`}
+          className={`mt-0 ${styles.heroHeadText} flex justify-center items-center`}
         >
           <motion.h2
             variants={textVariant()}
@@ -47,7 +44,7 @@ function Contact() {
             Get in Touch
           </motion.h2>
         </div>
-        <div className="box">
+        <div className="box w-screen">
           <motion.div
             variants={slideIn("left", "tween", 0.5, 1)}
             initial="hidden"
@@ -64,7 +61,7 @@ function Contact() {
                     <input
                       type="text"
                       required
-                      placeholder="Shishir"
+                      placeholder="First Name"
                       name="user_name"
                       className="bg-[#222630] px-4 py-3 outline-none text-white rounded-lg border-2 transition-colors duration-100 border-solid focus:border-[#596A95] border-[#2B3040]"
                     />
@@ -74,7 +71,7 @@ function Contact() {
                     <input
                       type="text"
                       required
-                      placeholder="Shrivastava"
+                      placeholder="Last Name"
                       name="user_surname"
                       className="bg-[#222630] px-4 py-3 outline-none text-white rounded-lg border-2 transition-colors duration-100 border-solid focus:border-[#596A95] border-[#2B3040]"
                     />
@@ -87,7 +84,7 @@ function Contact() {
                     <input
                       type="email"
                       required
-                      placeholder="shishirshrivastava30@gmail.com"
+                      placeholder="example@gmail.com"
                       name="user_email"
                       className="bg-[#222630] px-4 py-3 outline-none text-white rounded-lg border-2 transition-colors duration-100 border-solid focus:border-[#596A95] border-[#2B3040]"
                     />
@@ -97,7 +94,7 @@ function Contact() {
                     <input
                       type="tel"
                       required
-                      placeholder="+91 9876543210"
+                      placeholder="+91 00000 00000"
                       name="user_contact"
                       className="bg-[#222630] px-4 py-3 outline-none text-white rounded-lg border-2 transition-colors duration-100 border-solid focus:border-[#596A95] border-[#2B3040]"
                     />
@@ -126,70 +123,13 @@ function Contact() {
               </div>
             </form>
           </motion.div>
-          <motion.div
-            variants={slideIn("right", "tween", 0.5, 1)}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-            className="contact info bg-primary"
-          >
-            <h3 className={styles.sectionHeadText}>Contact Info</h3>
-            <div className="infoBox ">
-              <div>
-                <span>
-                  <ImLocation2 />
-                </span>
-                <motion.p whileHover={{ y: -10 }}>IPS Academy</motion.p>
-              </div>
-              <div>
-                <span>
-                  <MdEmail />
-                </span>
-                <motion.a
-                  whileHover={{ y: -10 }}
-                  href="mailto:ecellipsa@gmail.com"
-                >
-                  ecellipsa@gmail.com
-                </motion.a>
-              </div>
-              <ul className="sci">
-                <motion.li whileHover={{ y: -10 }}>
-                  <a
-                    className="fb"
-                    href={"https://www.facebook.com/ecellvssut/"}
-                  >
-                    <BsFacebook />
-                  </a>
-                </motion.li>
-                <motion.li whileHover={{ y: -10 }}>
-                  <a
-                    className="ln"
-                    href={
-                      "https://www.linkedin.com/company/ecellvssut/mycompany/"
-                    }
-                  >
-                    <BsLinkedin />
-                  </a>
-                </motion.li>
-                <motion.li whileHover={{ y: -10 }}>
-                  <a
-                    className="in"
-                    href={"https://www.instagram.com/ecellvssut/"}
-                  >
-                    <BsInstagram />
-                  </a>
-                </motion.li>
-              </ul>
-            </div>
-          </motion.div>
 
           <motion.div
             variants={slideIn("right", "tween", 0.5, 1)}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="contact map -mt-8"
-            id="map-"
+            className="contact map"
           >
             <iframe
               title="google"

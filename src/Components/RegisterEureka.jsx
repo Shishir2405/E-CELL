@@ -1,5 +1,4 @@
 import React from "react";
-import { aboutLogo } from "../assets";
 import { motion } from "framer-motion";
 import "../App.css";
 import { styles } from "../styles";
@@ -19,7 +18,7 @@ function EurekaRegister() {
             variants={textVariant()}
             className={`${styles.heroHeadText} flex justify-center m-16`}
           >
-            Pitching {" "}
+            Pitching{" "}
             <span className="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent ml-2">
               Contest
             </span>
@@ -50,10 +49,9 @@ function EurekaRegister() {
               <p className="mb-4">
                 Registration ends on <b className="text-white">26 Sep 2024</b>{" "}
               </p>
-              <p  className="mb-4">
-                Team size <b className="text-white">Maximum of 4 members,</b>{" "}
-                or you can participate{" "}
-                <b className="text-white">indivisually.</b>{" "}
+              <p className="mb-4">
+                Team size <b className="text-white">Maximum of 4 members,</b> or
+                you can participate <b className="text-white">indivisually.</b>{" "}
               </p>
             </div>
 
@@ -69,10 +67,12 @@ function EurekaRegister() {
                   Explore
                 </button>
               </a>
-              <a href="">
-                {" "}
+              <a
+                href="../assets/About/ECELL.pdf"
+                download="Guideline_of_Contest"
+              >
                 <button className="border-2 px-6 py-2 text-base text-white rounded-lg font-medium hover:bg-white/10">
-                  Guildline
+                  Guideline
                 </button>
               </a>
             </div>

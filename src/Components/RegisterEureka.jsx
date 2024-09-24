@@ -6,7 +6,7 @@ import { textVariant, slideIn } from "../utils/motion";
 
 function EurekaRegister() {
   return (
-    <section id="mission" className="w-full h-fit mx-auto lg:h-screen px-8">
+    <section id="eureka" className="w-full h-fit mx-auto lg:h-screen px-8">
       <div className={`${styles.paddingX}`}>
         <div className="relative w-fit mx-auto">
           <span className="h-[1px] w-36 bg-white absolute -bottom-2 -right-9" />
@@ -51,7 +51,7 @@ function EurekaRegister() {
               </p>
               <p className="mb-4">
                 Team size <b className="text-white">Maximum of 4 members,</b> or
-                you can participate <b className="text-white">indivisually.</b>{" "}
+                you can participate <b className="text-white">individually.</b>{" "}
               </p>
             </div>
 
@@ -62,17 +62,12 @@ function EurekaRegister() {
                   Register
                 </button>
               </a>
-              <a href="https://www.ecell.in/eureka/">
-                <button className="border-2 px-6 py-2 text-base text-white rounded-lg font-medium hover:bg-white/10">
-                  Explore
-                </button>
-              </a>
               <a
                 href="../assets/About/ECELL.pdf"
                 download="Guideline_of_Contest"
               >
                 <button className="border-2 px-6 py-2 text-base text-white rounded-lg font-medium hover:bg-white/10">
-                  Guideline
+                Guideline 
                 </button>
               </a>
             </div>

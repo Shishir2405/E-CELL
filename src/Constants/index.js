@@ -1,19 +1,13 @@
-import {
-  eSummit,
-  c2,
-  c1,
-  b3,
-  b2,
-  b1,
-  a1,
-  a2,
-  a3,
-} from "../assets";
+import { eSummit, c2, c1, b3, b2, b1, a1, a2, a3 } from "../assets";
 
 export const navLinks = [
   {
     id: "home",
     title: "Home",
+  },
+  {
+    id: "eureka",
+    title: "Eureka",
   },
   {
     id: "about",
@@ -57,15 +51,20 @@ const events = [
     icon: eSummit,
     iconBg: "#383E56",
     date: "19 August 2024",
-    points: ["For First Year Student Awareness For The Enterpreneurship"],
+    points: [
+      "Empowering first-year students with entrepreneurial insights, fostering innovation, and setting the stage for future startup leaders.",
+    ],
     site: "https://www.google.com/",
   },
+
   {
     title: "Pitching Contest",
     icon: eSummit,
     iconBg: "#383E56",
     date: "27 September 2024",
-    points: ["For First Year Student Awareness For The Enterpreneurship"],
+    points: [
+      "Organized a pitching competition to promote entrepreneurship at IPS Academy, providing early-stage startups with a platform to gain exposure and network with mentors.",
+    ],
     site: "https://www.google.com/",
   },
 ];
@@ -136,6 +135,5 @@ const GalleryData = [
     image: c2,
   },
 ];
-
 
 export { events, GalleryData };

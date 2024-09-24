@@ -50,7 +50,7 @@ function Footer() {
               <i class="fa-brands fa-instagram"></i>
             </a>
             <a
-              href="https://chat.whatsapp.com/Hy4VSli00b46v12wGDNbmZ"
+              href="https://chat.whatsapp.com/GIMjiqXRJ6AFBNWq8YptIW"
               className="block text-white/75 transition-all duration-500 hover:text-sky-400 text-xl"
             >
               <i class="fa-brands fa-whatsapp"></i>

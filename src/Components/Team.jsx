@@ -116,14 +116,20 @@
 // }
 
 // export default Team;
-import React from 'react'
+import React from "react";
+import img6 from "./image.png";
 
 const Team = () => {
   return (
-    <div>
-      Team
+    <div className="w-full h-screen flex justify-center items-center">
+      <img 
+        src={img6} 
+        alt="Team Image" 
+        className="h-full w-auto object-cover" 
+      />
     </div>
-  )
+  );
 }
 
-export default Team
+export default Team;
+

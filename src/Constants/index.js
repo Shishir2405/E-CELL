@@ -50,7 +50,7 @@ const events = [
     title: "Induction Program",
     icon: eSummit,
     iconBg: "#383E56",
-    date: "19 August 2024",
+    date: "19 September 2024",
     points: [
       "Empowering first-year students with entrepreneurial insights, fostering innovation, and setting the stage for future startup leaders.",
     ],

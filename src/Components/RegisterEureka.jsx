@@ -45,7 +45,7 @@ function EurekaRegister() {
               and earn a fast tracked evaluation to Eureka's Zonal round .
             </p>
 
-            <div className={`${styles.sectionSubText} w-full text-left`}>
+            <div className={`${styles.sectionSubText} w-full text-left indent-4 tracking-widest leading-7 lg:leading-9 text-sm md:text-base mb-6 lg:text-lg`}>
               <p className="mb-4">
                 Registration ends on <b className="text-white">26 Sep 2024</b>{" "}
               </p>
@@ -55,19 +55,17 @@ function EurekaRegister() {
               </p>
             </div>
 
-            <div className="w-3/4 flex justify-evenly mt-8">
-              {" "}
+            <div className="w-3/4 flex justify-evenly mt-8 mb-16 xs:mb-16">
               <a href="https://forms.gle/CRgmYXCYoWwU2xGC9">
                 <button className="border-2 px-6 py-2 text-base text-white rounded-lg font-medium hover:bg-white/10">
                   Register
                 </button>
               </a>
               <a
-                href="../assets/About/ECELL.pdf"
-                download="Guideline_of_Contest"
+                href="/team"
               >
                 <button className="border-2 px-6 py-2 text-base text-white rounded-lg font-medium hover:bg-white/10">
-                Guideline 
+                  Guideline
                 </button>
               </a>
             </div>

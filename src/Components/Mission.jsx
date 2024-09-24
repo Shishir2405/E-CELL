@@ -1,5 +1,4 @@
 import React from "react";
-import { aboutLogo } from "../assets";
 import { motion } from "framer-motion";
 import "../App.css";
 import { styles } from "../styles";
@@ -10,14 +9,14 @@ function Mission() {
     <section id="mission" className="w-full h-fit mx-auto lg:h-screen px-8">
       <div className={`${styles.paddingX}`}>
         <div className="relative w-fit mx-auto">
-          <span className="h-[1px] w-36 bg-white absolute -bottom-2 -right-9" />
-          <span className="h-[1px] w-36 bg-white absolute -top-2 -left-9" />
+          <span className="h-[1px] w-32 bg-white absolute -bottom-2 -right-9" />
+          <span className="h-[1px] w-32 bg-white absolute -top-2 -left-9" />
           <motion.h1
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
             variants={textVariant()}
-            className={`${styles.heroHeadText} flex justify-center m-16`}
+            className={`${styles.heroHeadText} flex justify-center mb-8`}
           >
             Our{" "}
             <span className="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent ml-2">
@@ -47,7 +46,7 @@ function Mission() {
               entrepreneurship, enhancing leadership skills, and offering
               crucial funding and guidance, we aim to empower the next
               generation of leaders to drive change and contribute meaningfully
-              to society and the global economy.
+              to society and the global economy.
             </p>
           </motion.div>
         </div>

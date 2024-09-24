@@ -17,7 +17,7 @@ function Vision() {
             whileInView="show"
             viewport={{ once: true }}
             variants={textVariant()}
-            className={`${styles.heroHeadText} flex justify-center`}
+            className={`${styles.heroHeadText} flex justify-center mb-8`}
           >
             Our{" "}
             <span className="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent ml-2">

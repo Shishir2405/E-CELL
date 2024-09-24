@@ -61,15 +61,7 @@ function App() {
                 </div>
               }
             />
-            {/* <Route
-          path="/team"
-          element={
-            <div>
-              <Team /> 
-              
-            </div>
-          }
-        /> */}
+            <Route path="/team" element={<Team />} />
           </Routes>
           <Footer />
         </BrowserRouter>

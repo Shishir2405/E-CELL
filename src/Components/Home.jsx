@@ -43,12 +43,12 @@ function Home() {
           className="p-2 border-none"
           whileHover={{ transition: { delay: 1 } }}
         >
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSckw7XDF13EV4DMprYjhzg9AgT4ICu6AWbHlztlOgG-LKgZEg/viewform?vc=0&c=0&w=1&flr=0">
+          {/* <a href="https://docs.google.com/forms/d/e/1FAIpQLSckw7XDF13EV4DMprYjhzg9AgT4ICu6AWbHlztlOgG-LKgZEg/viewform?vc=0&c=0&w=1&flr=0">
             {" "}
             <button className="border-2 px-6 py-2 text-base text-white rounded-lg font-medium hover:bg-white/10">
-              Feedback
+              Register
             </button>
-          </a>
+          </a> */}
         </motion.div>
       </div>
       <StarsCanvas />

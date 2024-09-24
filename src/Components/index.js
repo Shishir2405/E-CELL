@@ -4,13 +4,12 @@ import Events from "./Events";
 import Gallery from "./Gallery";
 import Home from "./Home";
 import Mission from "./Mission";
-import Startups from "./Startups";
-import Wings from "./Wings";
 import Navbar from "./Navbar/Navbar";
 import { StarsCanvas } from "./canvas";
 import Team from "./Team";
 import Footer from "./Footer";
 import Vision from "./Vision";
+import EurekaRegister from "./RegisterEureka";
 
 export {
   About,
@@ -19,12 +18,10 @@ export {
   Gallery,
   Home,
   Navbar,
-  Startups,
-  // Terstimonials,
-  Wings,
   StarsCanvas,
   Team,
   Footer,
   Mission,
   Vision,
+  EurekaRegister,
 };

@@ -11,6 +11,7 @@ import {
   Footer,
   Mission,
   Vision,
+  EurekaRegister,
 } from "./Components";
 
 import { useState, useEffect } from "react";
@@ -47,14 +48,12 @@ function App() {
               element={
                 <div className="relative z-0 bg-primary">
                   <Home />
+                  <EurekaRegister />
                   <About />
                   <Mission />
                   <Vision />
                   <Events />
                   <Gallery />
-                  {/* <Startups />
-              <Wings />
-              <Terstimonials /> */}
                   <div className="relative z-0 bg-primary">
                     <StarsCanvas />
                     <Contact setLoading={setLoading} loading={loading} />

@@ -61,7 +61,7 @@ const events = [
     title: "Pitching Contest",
     icon: eSummit,
     iconBg: "#383E56",
-    date: "27 September 2024",
+    date: "1 October 2024",
     points: [
       "Organized a pitching competition to promote entrepreneurship at IPS Academy, providing early-stage startups with a platform to gain exposure and network with mentors.",
     ],

@@ -118,12 +118,18 @@
 // export default Team;
 import React from "react";
 import img6 from "./image.png";
+import img7 from "./Guildline.png";
 
 const Team = () => {
   return (
-    <div className="w-full h-screen flex justify-center items-center">
+    <div className="w-full h-screen flex justify-center items-center p-8">
       <img 
         src={img6} 
+        alt="Team Image" 
+        className="h-full w-auto object-cover" 
+      />
+      <img 
+        src={img7} 
         alt="Team Image" 
         className="h-full w-auto object-cover" 
       />

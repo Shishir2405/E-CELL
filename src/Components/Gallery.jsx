@@ -5,6 +5,8 @@ import Img1 from "../assets/Gallery/IMG_0014.JPG";
 import Img2 from "../assets/Gallery/img1.JPG";
 import Img3 from "../assets/Gallery/IMG_7722.JPG";
 import Img4 from "../assets/Gallery/IMG_0049.JPG";
+import Img5 from "../assets/Gallery/IMG_20240927_162927.jpg"
+import Img6 from "../assets/Gallery/IMG_20240927_153851.jpg"
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { textVariant, slideIn } from "../utils/motion";
@@ -22,6 +24,14 @@ const Gallery = () => {
     {
       id: 2,
       imgSrc: Img1,
+    },
+    {
+      id: 2,
+      imgSrc: Img5,
+    },
+    {
+      id: 2,
+      imgSrc: Img6,
     },
   ];
   const [model, setModel] = useState(false);

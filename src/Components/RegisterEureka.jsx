@@ -47,7 +47,7 @@ function EurekaRegister() {
 
             <div className={`${styles.sectionSubText} w-full text-left indent-4 tracking-widest leading-7 lg:leading-9 text-sm md:text-base mb-6 lg:text-lg`}>
               <p className="mb-4">
-                Registration ends on <b className="text-white">29 Sep 2024</b>{" "}
+                Registration ends on <b className="text-white">1 Oct 2024</b>{" "}
               </p>
               <p className="mb-4">
                 Team size <b className="text-white">Maximum of 4 members,</b> or

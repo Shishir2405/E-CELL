@@ -48,7 +48,6 @@ function App() {
               element={
                 <div className="relative z-0 bg-primary">
                   <Home />
-                  <EurekaRegister />
                   <About />
                   <Mission />
                   <Vision />

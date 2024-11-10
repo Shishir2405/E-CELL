@@ -13,9 +13,10 @@ import {
   Vision,
   EurekaRegister,
 } from "./Components";
-
 import { useState, useEffect } from "react";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
+import Blog from "./Components/blog";
+import Blog1 from "./Components/Blog1";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -53,6 +54,7 @@ function App() {
                   <Vision />
                   <Events />
                   <Gallery />
+                  <Blog />
                   <div className="relative z-0 bg-primary">
                     <StarsCanvas />
                     <Contact setLoading={setLoading} loading={loading} />
@@ -61,6 +63,7 @@ function App() {
               }
             />
             <Route path="/team" element={<Team />} />
+            <Route path="/blog1" element={<Blog1 />} />
           </Routes>
           <Footer />
         </BrowserRouter>

@@ -55,6 +55,7 @@ function Navbar() {
                   }}
                 >
                   <Link to="/">{link.title}</Link>
+                  {console.log('link.title: ', link.title)}
                 </LinkRoll>
               )}
             </li>

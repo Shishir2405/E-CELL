@@ -1,5 +1,4 @@
 import { eSummit, c2, c1, b3, b2, b1, a1, a2, a3 } from "../assets";
-
 export const navLinks = [
   {
     id: "home",
@@ -27,6 +26,11 @@ export const navLinks = [
     id: "gallery",
     title: "Gallery",
   },
+  {
+    id:"blog",
+    title:"Blog"
+  },
+  
   {
     id: "contact",
     title: "Contact",
@@ -132,4 +136,4 @@ const GalleryData = [
   },
 ];
 
-export { events, GalleryData };
+export { events, GalleryData};

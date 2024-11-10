@@ -35,6 +35,11 @@ function Footer() {
                 Gallery
               </a>
             </li>
+            <li>
+              <a href="#blog" className=" text-white/50 hover:text-white">
+                Blog
+              </a>
+            </li>
           </ul>
           <div className="w-5/6 flex space-x-10 justify-center items-center mb-10">
             <a

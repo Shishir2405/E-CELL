@@ -15,7 +15,7 @@ import {
 } from "./Components";
 import { useState, useEffect } from "react";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
-import Blog from "./Components/blog";
+import Blog from "./Components/Blog";
 import Blog1 from "./Components/Blog1";
 
 function App() {

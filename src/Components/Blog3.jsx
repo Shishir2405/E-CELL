@@ -3,6 +3,7 @@ import "../App.css";
 import { styles } from "../styles";
 import { motion } from "framer-motion";
 import { textVariant } from "../utils/motion";
+import BlogImage from "../assets/blog-images/blog3.webp";
 
 function Blog3() {
   const paragraphVariantLeft = {
@@ -48,7 +49,7 @@ function Blog3() {
         className="w-full max-w-lg mb-6"
       >
         <img
-          src="src\assets\blog-images\blog3.webp"
+          src={BlogImage}
           alt="Entrepreneurial Journey"
           className="w-full h-auto rounded-lg"
         />

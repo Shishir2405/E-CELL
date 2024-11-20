@@ -4,6 +4,8 @@ import { styles } from "../styles";
 import { motion } from "framer-motion";
 import { textVariant } from "../utils/motion";
 import { useNavigate } from "react-router-dom";
+import BlogImage2 from "../assets/blog-images/blog2.webp";
+import BlogImage3 from "../assets/blog-images/blog3.webp";
 
 function Blog() {
   const navigate = useNavigate();
@@ -74,7 +76,7 @@ function Blog() {
         <div className="flex flex-col md:flex-row items-center bg-transparent text-white border border-gray-200 rounded-2xl shadow-md overflow-hidden transition-transform duration-300 transform hover:scale-105 w-full max-w-lg md:max-w-3xl mx-auto my-4">
           <div className="w-full h-48 md:w-1/3 md:h-auto">
             <img
-              src="src\assets\blog-images\blog2.webp"
+              src={BlogImage2}
               alt="Blog image 2"
               className="object-cover h-full w-full rounded-t-2xl md:rounded-t-none md:rounded-l-2xl"
             />
@@ -100,7 +102,7 @@ function Blog() {
         <div className="flex flex-col md:flex-row items-center bg-transparent text-white border border-gray-200 rounded-2xl shadow-md overflow-hidden transition-transform duration-300 transform hover:scale-105 w-full max-w-lg md:max-w-3xl mx-auto my-4">
           <div className="w-full h-48 md:w-1/3 md:h-auto">
             <img
-              src="src\assets\blog-images\blog3.webp"
+              src={BlogImage3}
               alt="Blog image 3"
               className="object-cover h-full w-full rounded-t-2xl md:rounded-t-none md:rounded-l-2xl"
             />

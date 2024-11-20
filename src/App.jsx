@@ -17,6 +17,8 @@ import { useState, useEffect } from "react";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 import Blog from "./Components/Blog";
 import Blog1 from "./Components/Blog1";
+import Blog2 from "./Components/Blog2";
+import Blog3 from "./Components/Blog3";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -64,6 +66,8 @@ function App() {
             />
             <Route path="/team" element={<Team />} />
             <Route path="/blog1" element={<Blog1 />} />
+            <Route path="/blog2" element={<Blog2 />} />
+            <Route path="/blog3" element={<Blog3 />} />
           </Routes>
           <Footer />
         </BrowserRouter>

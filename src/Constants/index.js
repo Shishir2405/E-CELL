@@ -27,10 +27,10 @@ export const navLinks = [
     title: "Gallery",
   },
   {
-    id:"blog",
-    title:"Blog"
+    id: "blog",
+    title: "Blog",
   },
-  
+
   {
     id: "contact",
     title: "Contact",
@@ -64,6 +64,21 @@ const events = [
     date: "4 October 2024",
     points: [
       "Organized a pitching competition to promote entrepreneurship at IPS Academy, providing early-stage startups with a platform to gain exposure and network with mentors.",
+    ],
+    site: "https://www.google.com/",
+  },
+  
+  {
+    title: "IgniteX",
+    icon: eSummit,
+    iconBg: "#383E56",
+    date: "3 December 2024",
+    points: [
+      "IgniteX 2024: Let’s Talk Entrepreneurship!",
+      "💡 Speaker sessions",
+      "🗣️ Open discussions",
+      "🎁 Surprises & rewards!",
+
     ],
     site: "https://www.google.com/",
   },
@@ -136,4 +151,4 @@ const GalleryData = [
   },
 ];
 
-export { events, GalleryData};
+export { events, GalleryData };

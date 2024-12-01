@@ -1,9 +1,9 @@
 import React from "react";
-import "../App.css";
-import { styles } from "../styles";
+import "../../App.css";
+import { styles } from "../../styles";
 import { motion } from "framer-motion";
-import { textVariant } from "../utils/motion";
-import BlogImage from "../assets/blog-images/blog7.webp";
+import { textVariant } from "../../utils/motion";
+import BlogImage from "../../assets/blog-images/blog7.webp";
 
 function Blog7() {
   const paragraphVariantLeft = {

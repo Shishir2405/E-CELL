@@ -10,6 +10,9 @@ import BlogImage4 from "../assets/blog-images/blog4.webp";
 import BlogImage5 from "../assets/blog-images/blog5.webp";
 import BlogImage6 from "../assets/blog-images/blog6.webp";
 import BlogImage7 from "../assets/blog-images/blog7.webp";
+import BlogImage8 from "../assets/blog-images/blog8.webp";
+import BlogImage9 from "../assets/blog-images/blog9.webp";
+import BlogImage10 from "../assets/blog-images/blog10.webp";
 
 function Blog() {
   const navigate = useNavigate();
@@ -225,6 +228,82 @@ function Blog() {
       </button>
     </div>
   </div>
+
+  {/* Card 8: The Role of Resilience in Entrepreneurial Success: Lessons from Startups */}
+<div className="flex flex-col md:flex-row items-center bg-transparent text-white border border-gray-200 rounded-2xl shadow-md overflow-hidden transition-transform duration-300 transform hover:scale-105 w-full max-w-lg md:max-w-3xl mx-auto my-4">
+  <div className="w-full h-48 md:w-1/3 md:h-auto">
+    <img
+      src={BlogImage8} 
+      alt="Resilience"
+      className="object-cover h-full w-full rounded-t-2xl md:rounded-t-none md:rounded-l-2xl"
+    />
+  </div>
+  <div className="p-6 md:w-2/3 flex flex-col">
+    <h4 className="text-lg font-semibold mb-2">
+      The Role of Resilience in Entrepreneurial Success: Lessons from Startups
+    </h4>
+    <p className="text-sm mb-4">
+      Resilience is a cornerstone of entrepreneurial success. This blog covers how overcoming setbacks is essential to thriving as an entrepreneur. Learn from examples like Airbnb and PayPal, whose founders faced early struggles but turned adversity into opportunities for growth.
+    </p>
+    <button
+      className="self-start mt-auto border border-white shadow-sm rounded-full py-2 px-5 text-xs text-white font-semibold transition-all duration-200"
+      onClick={() => handleRedirect("/blog8")} // Path for blog 8
+    >
+      Read More
+    </button>
+  </div>
+</div>
+
+{/* Card 9: Leveraging AI and Technology for Innovative Business Solutions */}
+<div className="flex flex-col md:flex-row items-center bg-transparent text-white border border-gray-200 rounded-2xl shadow-md overflow-hidden transition-transform duration-300 transform hover:scale-105 w-full max-w-lg md:max-w-3xl mx-auto my-4">
+  <div className="w-full h-48 md:w-1/3 md:h-auto">
+    <img
+      src={BlogImage9} 
+      alt="AI & Technology"
+      className="object-cover h-full w-full rounded-t-2xl md:rounded-t-none md:rounded-l-2xl"
+    />
+  </div>
+  <div className="p-6 md:w-2/3 flex flex-col">
+    <h4 className="text-lg font-semibold mb-2">
+      Leveraging AI and Technology for Innovative Business Solutions
+    </h4>
+    <p className="text-sm mb-4">
+      AI and emerging technologies are reshaping the entrepreneurial landscape. This blog explores how entrepreneurs can use AI, blockchain, and other tools to drive efficiency, optimize operations, and stay ahead in a competitive market.
+    </p>
+    <button
+      className="self-start mt-auto border border-white shadow-sm rounded-full py-2 px-5 text-xs text-white font-semibold transition-all duration-200"
+      onClick={() => handleRedirect("/blog9")} // Path for blog 9
+    >
+      Read More
+    </button>
+  </div>
+</div>
+
+{/* Card 10: The Power of Networking: Building Connections to Scale Your Startup */}
+<div className="flex flex-col md:flex-row items-center bg-transparent text-white border border-gray-200 rounded-2xl shadow-md overflow-hidden transition-transform duration-300 transform hover:scale-105 w-full max-w-lg md:max-w-3xl mx-auto my-4">
+  <div className="w-full h-48 md:w-1/3 md:h-auto">
+    <img
+      src={BlogImage10} 
+      alt="Networking"
+      className="object-cover h-full w-full rounded-t-2xl md:rounded-t-none md:rounded-l-2xl"
+    />
+  </div>
+  <div className="p-6 md:w-2/3 flex flex-col">
+    <h4 className="text-lg font-semibold mb-2">
+      The Power of Networking: Building Connections to Scale Your Startup
+    </h4>
+    <p className="text-sm mb-4">
+      Networking is key to entrepreneurial success. This blog covers how entrepreneurs can leverage their network to gain funding, mentorship, and business growth. Learn tips for effective networking, including building meaningful relationships and staying authentic.
+    </p>
+    <button
+      className="self-start mt-auto border border-white shadow-sm rounded-full py-2 px-5 text-xs text-white font-semibold transition-all duration-200"
+      onClick={() => handleRedirect("/blog10")} // Path for blog 10
+    >
+      Read More
+    </button>
+  </div>
+</div>
+
 </div>
 
       </div>

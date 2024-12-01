@@ -1,12 +1,11 @@
 import React from "react";
-import "../App.css";
-import { styles } from "../styles";
+import "../../App.css";
+import { styles } from "../../styles";
 import { motion } from "framer-motion";
-import { textVariant } from "../utils/motion";
-import BlogImage from "../assets/blog-images/blog2.webp";
+import { textVariant } from "../../utils/motion";
+import BlogImage from "../../assets/blog-images/blog9.webp";
 
-
-function Blog2() {
+function Blog9() {
   const paragraphVariantLeft = {
     hidden: { opacity: 0, x: -100 },
     show: { opacity: 1, x: 0, transition: { duration: 0.6 } },
@@ -36,7 +35,7 @@ function Blog2() {
             className={`${styles.heroHeadText} flex justify-center`}
           >
             <span className="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent ml-2 text-2xl">
-              Building a Startup Team: Why People Matter More Than Ideas
+              Leveraging AI and Technology for Innovative Business Solutions
             </span>
           </motion.h2>
         </div>
@@ -50,8 +49,8 @@ function Blog2() {
         className="w-full max-w-lg mb-6"
       >
         <img
-        src={BlogImage}
-          alt="Startup Team"
+          src={BlogImage} // Choose an image relevant to AI or technology
+          alt="AI and Technology"
           className="w-full h-auto rounded-lg"
         />
       </motion.div>
@@ -64,7 +63,7 @@ function Blog2() {
         style={{ color: "white" }}
         className="text-base leading-relaxed"
       >
-        In the startup world, success is often determined by the people who make up the team rather than the idea itself. A strong team, aligned with the founder's vision, can turn a groundbreaking concept into reality. Identifying key roles in technology, marketing, operations, and business development is crucial to executing the startup’s mission effectively.
+        The rapid evolution of artificial intelligence (AI) and other cutting-edge technologies has dramatically reshaped the business world, offering new opportunities and tools that were previously unthinkable. AI, especially, is revolutionizing how businesses operate, from automating processes to creating personalized experiences for customers.
       </motion.p>
 
       <motion.p
@@ -75,7 +74,7 @@ function Blog2() {
         style={{ color: "white" }}
         className="text-base leading-relaxed"
       >
-        Creating a collaborative work environment is essential for startups operating under high-pressure scenarios. Open communication, mutual respect, and a positive culture foster innovation and problem-solving. A team that trusts each other can stay committed through challenges, ensuring the business remains resilient.
+        For instance, startups are increasingly utilizing AI-driven chatbots to provide 24/7 customer service, while machine learning algorithms are helping businesses fine-tune their marketing strategies by analyzing consumer behavior.
       </motion.p>
 
       <motion.p
@@ -86,10 +85,32 @@ function Blog2() {
         style={{ color: "white" }}
         className="text-base leading-relaxed"
       >
-        To retain talent, startups can offer equity, growth opportunities, and flexible arrangements. Recognizing contributions motivates the team and builds loyalty. Ultimately, a dedicated and skilled team is the backbone of any successful startup, driving its vision forward.
+        In addition to AI, other emerging technologies such as blockchain, Internet of Things (IoT), and augmented reality (AR) are fostering innovation across various industries. These technologies are not only improving efficiencies but are also enabling businesses to offer more personalized and responsive products and services, creating a competitive edge in the market.
+      </motion.p>
+
+      <motion.p
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        variants={paragraphVariantRight}
+        style={{ color: "white" }}
+        className="text-base leading-relaxed"
+      >
+        Entrepreneurs now have the opportunity to leverage these technologies to streamline operations, enhance customer experiences, reduce operational costs, and stay ahead of market trends. This blog will explore how startups, regardless of their size or sector, can integrate AI and emerging technologies into their business models.
+      </motion.p>
+
+      <motion.p
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        variants={paragraphVariantLeft}
+        style={{ color: "white" }}
+        className="text-base leading-relaxed"
+      >
+        By doing so, they can position themselves for success in a rapidly evolving digital landscape.
       </motion.p>
     </div>
   );
 }
 
-export default Blog2;
+export default Blog9;

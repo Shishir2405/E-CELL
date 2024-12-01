@@ -16,13 +16,16 @@ import {
 import { useState, useEffect } from "react";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 import Blog from "./Components/Blog";
-import Blog1 from "./Components/Blog1";
-import Blog2 from "./Components/Blog2";
-import Blog3 from "./Components/Blog3";
-import Blog4 from "./Components/Blog4";
-import Blog5 from "./Components/Blog5";
-import Blog6 from "./Components/Blog6";
-import Blog7 from "./Components/Blog7";
+import Blog1 from "./Components/blogs/Blog1";
+import Blog2 from "./Components/blogs/Blog2";
+import Blog3 from "./Components/blogs/Blog3";
+import Blog4 from "./Components/blogs/Blog4";
+import Blog5 from "./Components/blogs/Blog5";
+import Blog6 from "./Components/blogs/Blog6";
+import Blog7 from "./Components/blogs/Blog7";
+import Blog8 from "./Components/blogs/Blog8";
+import Blog9 from "./Components/blogs/Blog9";
+import Blog10 from "./Components/blogs/Blog10";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -76,6 +79,9 @@ function App() {
             <Route path="/blog5" element={<Blog5 />} />
             <Route path="/blog6" element={<Blog6 />} />
             <Route path="/blog7" element={<Blog7 />} />
+            <Route path="/blog8" element={<Blog8 />} />
+            <Route path="/blog9" element={<Blog9 />} />
+            <Route path="/blog10" element={<Blog10 />} />
           </Routes>
           <Footer />
         </BrowserRouter>
